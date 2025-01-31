@@ -1,64 +1,102 @@
 nav {
   display: flex;
-  flex-direction: column;
-  background-color: #333;
-  padding: 3vh;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #333;
+  padding: 3vh 2vw; /* Usa unità relative per il padding */
+  margin-top: 3vh;
+  width: 100%; /* La larghezza si adatta al contenitore */
+  /*position: fixed;  Fissa la nav in cima alla pagina */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 2vmin; /* Dimensione font relativa alla viewport */
+}
+
+nav .logo {
+  color: white;
+  font-size: 4vmin; /* Dimensione logo dinamica */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 2vw; /* Usa unità relative per il margine */
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: auto;
+  width: 25vmin; /* Usa una larghezza dinamica in base alla viewport */
+  max-width: 100%; /* Impedisce che l'immagine ecceda la larghezza del contenitore */
+  max-height: 8vh; /* Limita l'altezza dell'immagine */
+  border-radius: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+nav ul li {
+  margin: 0 2vw; /* Margine dinamico tra i link */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1vmin 2vw;
+  border-radius: 100px;
+  font-size: 3vmin; /* Font-size flessibile per i link */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #14db88;
+  color: #333;
+  font-weight: 550;
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Disporre gli elementi verticalmente su schermi piccoli */
+    padding: 5vh 3vw; /* Aumenta il padding verticale su schermi piccoli */
   }
-  
+
   nav .logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+    margin-bottom: 2vh; /* Spazio tra il logo e i link */
   }
-  
+
   nav ul {
-    display: flex; 
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-    justify-content: center;
-    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Assicura che la lista occupi tutta la larghezza disponibile */
   }
-  
+
   nav ul li {
-    margin: 0 15px;
+    margin: 1vh 0; /* Aumenta la distanza tra i link */
   }
-  
+
   nav a {
-    color: white; 
-    text-decoration: none; 
-    font-size: 16px; 
-    padding: 10px 15px; 
-    border-radius: 5px; 
-    transition: background-color 0.3s, color 0.3s; 
+    font-size: 4vmin; /* Aumenta la dimensione del testo per schermi piccoli */
   }
-  
-  nav a:hover,
-  nav a.active {
-    background-color: #f39c12; 
-    color: #333;
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 6vh 3vw; /* Ulteriore aumento del padding su schermi molto piccoli */
   }
-  
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul li {
-      margin: 10px 0;
-    }
-  
-    nav {
-      padding: 10px;
-    }
+
+  nav .logo {
+    font-size: 5vmin; /* Aumenta la dimensione del logo per schermi piccoli */
   }
-  
+
+  nav a {
+    font-size: 5vmin; /* Aumenta la dimensione del testo per schermi più piccoli */
+  }
+}

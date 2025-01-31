@@ -1,13 +1,15 @@
 .App {
-  width: 100%;
-  height: 100%;
+  width: 100%;  /* Usa il 100% della larghezza disponibile */
+  height: 100vh; /* Imposta l'altezza al 100% della viewport */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
 }
 
@@ -19,18 +21,27 @@
 
 .App-header {
   background-color: #282c34;
-  height: 100%;
-  width: 100%;
+  width: 100%;  /* La larghezza si adatta automaticamente alla larghezza del contenitore */
+  height: 100%; /* L'altezza del contenitore sarà il 100% dell'altezza della pagina */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(5vmin + 1vw); /* Modifica per una maggiore adattabilità */
+  font-size: calc(2rem + 5vw); /* Ottimizza la dimensione del testo in base alla larghezza dello schermo */
   color: white;
+  padding: 20px; /* Aggiungi un po' di spazio intorno per migliorare la leggibilità */
+}
+
+.Routes-container {
+  width: 100%;
+  height: calc(100vh - 10vh); /* L'altezza si adatta togliendo l'altezza della header */
+  /*overflow-y: auto;  Consente lo scroll verticale se necessario */
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none; /* Rimuove la sottolineatura predefinita */
+  font-size: 1.2rem; /* Imposta una dimensione del font relativa */
 }
 
 @keyframes App-logo-spin {

@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import logo from './logo.svg';
-import gear from './gear.png';
 import './App.css';
 import './styles/navbar.css'; // Assicurati che il percorso del CSS sia corretto
 import Home from './pages/Home';   // Importazione dalla cartella 'pages'
@@ -15,11 +13,13 @@ function App() {
     <Router>
       <div className="App">
         <Helmet>
-          <title>Test</title>
+          <title>My Page</title>
         </Helmet>
-        <header className="App-header">
-          {/* Barra di navigazione */}
-          <Navbar /> {/* Usa il componente Navbar qui */}
+        {/* Barra di navigazione */}
+        <Navbar /> {/* Usa il componente Navbar qui */}
+        
+        {/* Contenitore per le rotte */}
+        <div className="Routes-container">
           <Routes>
             {/* Rotta di default */}
             <Route path="/my-page/" element={<Home />} />
@@ -29,7 +29,7 @@ function App() {
             {/* Redirect esplicito alla home, se la rotta non esiste */}
             <Route path="*" element={<Navigate to="/my-page" replace />} />
           </Routes>
-        </header>
+        </div>
       </div>
     </Router>
   );

@@ -1,10 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/navbar.css'; // Assicurati che il percorso del CSS sia corretto
+import '../styles/navbar.css';
+import logo from '../assets/my-logo_transparent.png'; // Importa l'immagine
 
 const Navbar = () => {
   return (
     <nav>
+      <div className="logo">
+        <img src={logo} alt="Logo" /> {/* Aggiungi l'immagine */}
+      </div>      
       <ul>
         <li>
           <NavLink to="/my-page" end activeClassName="active">
