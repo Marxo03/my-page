@@ -2,11 +2,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 3vh 2vw; /* Usa unità relative per il padding */
-  margin-top: 3vh;
+  background: linear-gradient(150deg, #0f3138, #334347);
+  padding: 3vh 0; /* Usa unità relative per il padding */
   width: 100%; /* La larghezza si adatta al contenitore */
-  /*position: fixed;  Fissa la nav in cima alla pagina */
+  position: fixed; /* Fissa la nav in cima alla pagina */
   top: 0;
   left: 0;
   z-index: 1000;
@@ -37,7 +36,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: right;
   flex-grow: 1;
 }
 
@@ -58,7 +57,7 @@ nav a:hover,
 nav a.active {
   background-color: #14db88;
   color: #333;
-  font-weight: 550;
+  font-weight: bold;
 }
 
 /* Media query per schermi più piccoli */
@@ -69,6 +68,7 @@ nav a.active {
   }
 
   nav .logo {
+    margin-top: 2vh;
     margin-bottom: 2vh; /* Spazio tra il logo e i link */
   }
 

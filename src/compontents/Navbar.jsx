@@ -25,6 +25,11 @@ const Navbar = () => {
             Resume
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/my-page/projects" activeClassName="active">
+            Projects
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

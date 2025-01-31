@@ -1,38 +1,25 @@
 import React from 'react';
-import gear from '../assets/gear.png';
-import '../styles/home.css';
+import gear from '../assets/ponyo.png';
+import '../styles/home.css'; // Assicurati di includere il file CSS
 import { Helmet } from 'react-helmet';
 import logo from '../assets/my-logo_transparent.png'; 
 import { NavLink } from 'react-router-dom';
 
-function About() {
+function Projects() {
   return (
     <div className="home-container">
       <Helmet>
-        <title>About</title>
-      </Helmet>
-
+          <title>Projects</title>
+        </Helmet>
       {/* Header */}
       <header className="header">
-        <h1>About Me</h1>
+        <h1>Welcome to Projects Page</h1>
       </header>
 
       {/* Body */}
       <main className="body">
         <img src={gear} className="App-logo" alt="logo" />
-        <p>This is the about page content. Learn more about us and what we do!</p>
-        
-        {/* YouTube Music Embed (via YouTube Music link) */}
-        <div className="youtube-music">
-          <iframe 
-            width="500vw" 
-            height="300vh" 
-            src="https://music.youtube.com/watch?v=Jq2tcDNeSC8"
-            title="YouTube Music player" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen>
-          </iframe>
-        </div>
+        <p>This is the projects page content. Enjoy exploring!</p>
       </main>
 
       {/* Footer */}
@@ -107,4 +94,4 @@ function About() {
   );
 }
 
-export default About;
+export default Projects;

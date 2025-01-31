@@ -34,9 +34,11 @@
 
 .Routes-container {
   width: 100%;
-  height: calc(100vh - 10vh); /* L'altezza si adatta togliendo l'altezza della header */
-  /*overflow-y: auto;  Consente lo scroll verticale se necessario */
+  height: calc(100vh - 10vh); /* L'altezza totale meno l'altezza della navbar */
+  margin-top: 6vh; /* Aggiungi un margine pari all'altezza della navbar per non sovrapporsi */
+  overflow-y: auto;  /* Consente lo scroll verticale se necessario */
 }
+
 
 .App-link {
   color: #61dafb;
