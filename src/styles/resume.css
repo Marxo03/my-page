@@ -1,0 +1,251 @@
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+    .resume-container .header {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding-top: 5vh;
+        height: 50vh;
+    }
+.resume-container .header h1{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+  }
+  
+  .main-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Base styling for the resume container */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.resume-container .header {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 5vh;
+    height: 50vh;
+}
+
+.resume-container .header h1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+/* Main section of the resume */
+.main-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Styling for cards */
+.card {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));  /* Crea una griglia di card flessibili */
+    gap: 20px;  /* Spaziatura tra le card */
+    border-radius: 30px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hover effect for cards */
+}
+
+/* Allinea la sezione del profilo e delle informazioni personali orizzontalmente */
+.profile-info-container {
+    display: flex;
+    gap: 20px; /* Spaziatura tra le due sezioni */
+    width: 100%; /* Larghezza massima per le sezioni affiancate */
+  }
+  
+  .profile-section, .section.personal-info {
+    flex: 1; /* Assicura che le sezioni occupino uguale spazio */
+  }
+  
+  /* Mantieni la larghezza delle immagini del profilo e altre impostazioni invariati */
+  .profile-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .profile-section h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .profile-section p {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+
+/* Section styling */
+.card .section {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h4, h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+ul, .experience-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Experience Item styling */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.experience-item p {
+    font-size: 1rem;
+}
+
+/* Skills Section */
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section ul li span {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Progress bar styling */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+/* From Uiverse.io by codebykay101 - Glass effect */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .glass {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: rgba(58, 71, 80, 0.521);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -30px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 30px;
+}
+
+.container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container .glass svg {
+    font-size: 2.5em;
+    fill: #fff;
+}
+
+/* Additional styling for hover effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .section:hover {
+    background-color: #e3e3e3;
+}

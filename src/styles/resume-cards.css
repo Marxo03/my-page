@@ -1,0 +1,45 @@
+/* From Uiverse.io by javierBarroso */ 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 100px);
+    grid-template-areas: "a b" "c b";
+    gap: 15px;
+  }
+  
+  .red {
+    background-color: #67aaf7;
+    grid-area: a;
+  }
+  
+  .blue {
+    background-color: #dda36c;
+    grid-area: b;
+  }
+  
+  .green {
+    background-color: #bc8acf;
+    grid-area: c;
+  }
+  
+
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 0.7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px #4444;
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(4px);
+    transform: scale(0.9, 0.9);
+  }
+  

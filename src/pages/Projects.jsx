@@ -1,6 +1,6 @@
 import React from 'react';
-import gear from '../assets/ponyo.png';
-import '../styles/home.css'; // Assicurati di includere il file CSS
+import '../styles/home.css';
+import '../styles/terminal-loading.css'; 
 import { Helmet } from 'react-helmet';
 import logo from '../assets/my-logo_transparent.png'; 
 import { NavLink } from 'react-router-dom';
@@ -18,7 +18,18 @@ function Projects() {
 
       {/* Body */}
       <main className="body">
-        <img src={gear} className="App-logo" alt="logo" />
+      <div class="terminal-loader">
+        <div class="terminal-header">
+          <div class="terminal-title">Status</div>
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+        </div>
+        <div class="text">Loading...</div>
+      </div>
+
         <p>This is the projects page content. Enjoy exploring!</p>
       </main>
 
@@ -68,10 +79,10 @@ function Projects() {
             </ul>
             <ul className="box">
               <li className="link_name">My Projects</li>
-              <li><a href="#">Arduino Projects</a></li>
+              <li><a href="#arduino">Arduino Projects</a></li>
               <li><a href="https://technomances.github.io/">Health4Paws</a></li>
-              <li><a href="#">EcoPath</a></li>
-              <li><a href="#">Other Projects</a></li>
+              <li><a href="#ecopath">EcoPath</a></li>
+              <li><a href="#another">Other Projects</a></li>
             </ul>
             <ul className="box">
               <li className="link_name">Contact</li>
@@ -84,7 +95,7 @@ function Projects() {
           <div className="bottom_text">
             <span className="copyright_text"><a href="https://opensource.org/license/mit"> &copy; Copyright 2025 Marxo03</a></span>
             <span className="policy_terms">
-              <a href="#">Privacy policy</a>
+              <a href="#privacy-policy">Privacy policy</a>
               <div className="credit">Made with <span style={{ color: 'tomato' }}><i class='bx bxs-heart' ></i></span> by <a href="https://www.marxo03.com/">Marxo03</a></div>
             </span>
           </div>

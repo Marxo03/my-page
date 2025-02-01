@@ -1,8 +1,9 @@
 import React from 'react';
-import gear from '../assets/ponyo.png';
+import ponyo from '../assets/ponyo.png';
 import '../styles/home.css';
 import { Helmet } from 'react-helmet';
 import logo from '../assets/my-logo_transparent.png';
+import profile from '../assets/dog.png';
 import { NavLink } from 'react-router-dom';
 
 function Home() {
@@ -13,13 +14,15 @@ function Home() {
       </Helmet>
 
       {/* Header */}
-      <header className="header">
+      <header id="home-header" className="header">
         <h1>Welcome to My Home Page</h1>
+        <p></p>
+        <img src={profile} className="dog-image" alt="developer-dog-image" />
       </header>
 
       {/* Body */}
-      <main className="body">
-        <img src={gear} className="App-logo" alt="logo" />
+      <main className="main">
+        <img src={ponyo} className="App-logo" alt="logo" />
         <p>This is the home page content. Enjoy exploring!</p>
       </main>
 
@@ -69,10 +72,10 @@ function Home() {
             </ul>
             <ul className="box">
               <li className="link_name">My Projects</li>
-              <li><a href="#">Arduino Projects</a></li>
+              <li><a href="#arduino">Arduino Projects</a></li>
               <li><a href="https://technomances.github.io/">Health4Paws</a></li>
-              <li><a href="#">EcoPath</a></li>
-              <li><a href="#">Other Projects</a></li>
+              <li><a href="#ecopath">EcoPath</a></li>
+              <li><a href="#another">Other Projects</a></li>
             </ul>
             <ul className="box">
               <li className="link_name">Contact</li>
@@ -85,7 +88,7 @@ function Home() {
           <div className="bottom_text">
             <span className="copyright_text"><a href="https://opensource.org/license/mit"> &copy; Copyright 2025 Marxo03</a></span>
             <span className="policy_terms">
-              <a href="#">Privacy policy</a>
+              <a href="#privacy-policy">Privacy policy</a>
               <div className="credit">Made with <span style={{ color: 'tomato' }}><i class='bx bxs-heart' ></i></span> by <a href="https://www.marxo03.com/">Marxo03</a></div>
             </span>
           </div>
