@@ -30,6 +30,11 @@ const Navbar = () => {
             Projects
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/my-page/contacts" activeClassName="active">
+            Contacts
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

@@ -35,17 +35,15 @@ function About() {
           </svg>
         </div>
         <div data-text="Profile" class="glass">
-  <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M256 0c70.7 0 128 57.3 128 128s-57.3 128-128 128-128-57.3-128-128 57.3-128 128-128zm0 320c-79.5 0-144 64.5-144 144v32h288v-32c0-79.5-64.5-144-144-144z"
-    ></path>
-  </svg>
-</div>
+        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M256 0c70.7 0 128 57.3 128 128s-57.3 128-128 128-128-57.3-128-128 57.3-128 128-128zm0 320c-79.5 0-144 64.5-144 144v32h288v-32c0-79.5-64.5-144-144-144z"
+          ></path>
+        </svg>
+        </div>
 
       </div>
-
-        <p>This is the about page content. Learn more about us and what we do!</p>
-        
+        <p>This is the about page content. Learn more about me and what i do! <i class='bx bxs-invader'></i></p>
       </main>
 
       {/* Footer */}

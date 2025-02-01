@@ -9,6 +9,7 @@ import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contacts from './pages/Contacts';
 import Navbar from './compontents/Navbar';
+import NotFound from './pages/NotFound'; 
 
 function App() {
   const [navbarHeight, setNavbarHeight] = useState(0);
@@ -35,7 +36,7 @@ function App() {
   }, []); // Esegui solo una volta quando il componente viene montato
 
   return (
-    <Router basename="/my-page">  {/* Aggiungi il basename qui */}
+    <Router>
       <div className="App">
         <Helmet>
           <title>My Page</title>
@@ -46,12 +47,12 @@ function App() {
         {/* Contenitore per le rotte */}
         <div className="Routes-container" style={{ marginTop: `${navbarHeight}px` }}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/my-page/" element={<Home />} />
+            <Route path="/my-page/about" element={<About />} />
+            <Route path="/my-page/resume" element={<Resume />} />
+            <Route path="/my-page/projects" element={<Projects />} />
+            <Route path="/my-page/contacts" element={<Contacts />} />
+            <Route path="*" element={<NotFound />} /> {/* Aggiungi la route per 404 */}
           </Routes>
         </div>
       </div>
