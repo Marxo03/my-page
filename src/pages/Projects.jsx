@@ -18,17 +18,17 @@ function Projects() {
 
       {/* Body */}
       <main className="body">
-      <div class="terminal-loader">
-        <div class="terminal-header">
-          <div class="terminal-title">Status</div>
-          <div class="terminal-controls">
-            <div class="control close"></div>
-            <div class="control minimize"></div>
-            <div class="control maximize"></div>
+        <div class="terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
           </div>
+          <div class="text">Work In progress...</div>
         </div>
-        <div class="text">Loading...</div>
-      </div>
 
         <p>This is the projects page content. Enjoy exploring!</p>
       </main>

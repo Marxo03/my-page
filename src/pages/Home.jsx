@@ -17,7 +17,7 @@ function Home() {
       <header id="home-header" className="header">
         <h1>Welcome to My Home Page</h1>
         <p></p>
-        <img src={profile} className="dog-image" alt="developer-dog-image" />
+        <img src={profile} className="dog-image" alt="funny-dog-developer" />
       </header>
 
       {/* Body */}

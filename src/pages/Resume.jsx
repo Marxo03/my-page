@@ -32,8 +32,8 @@ function Resume() {
             <div className="section personal-info">
               <h3>Personal Information</h3>
               <ul>
-                <li><strong>Email:</strong> <i className='bx bxs-envelope' ></i> jack.owl03m@example.com</li>
-                <li><strong>Phone:</strong> <i className='bx bxs-phone'></i> +39 393 7890 </li>
+                <li><strong>Email:</strong> <i className='bx bxs-envelope' ></i> jack.owl03m@gmail.com</li>
+                <li><strong>Phone:</strong> <i className='bx bxs-phone'></i> +39 393 1580648 </li>
                 <li><strong>Location:</strong> <i className='bx bxs-map'></i> Bari, Italy</li>
               </ul>
             </div>
@@ -51,40 +51,94 @@ function Resume() {
           <div className="section">
             <h3>Experience</h3>
             <div className="experience-item">
-              <h4>Software Engineer | Company ABC</h4>
-              <p><strong>Duration:</strong> Jan 2020 - Present</p>
-              <p>Developed web applications using React and Node.js. Improved the performance of key systems by 30%.</p>
+              <h4>Software Engineer | Technomancers StartUp</h4>
+              <p><strong>Duration:</strong> Oct 2024 - Feb 2025</p>
+              <p>Developed an innovative web app for managing animal and veterinary patient health using React, CSS3, Node.js, and REST APIs.</p>
             </div>
           </div>
-
+          
           <div className="section">
-            <h3>Skills</h3>
-            <ul>
-              <li>
-                <span>JavaScript, React.js, Vue.js, Node.js</span>
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: '90%' }}></div>
-                </div>
-              </li>
-              <li>
-                <span>HTML5, CSS3, Bootstrap 4</span>
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: '75%' }}></div>
-                </div>
-              </li>
-              <li>
-                <span>Python, Django, PyQt, Pandas, Numpy</span>
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: '85%' }}></div>
-                </div>
-              </li>
-              <li>
-                <span>SQL, MySQL, PostgreSQL, MongoDB</span>
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: '80%' }}></div>
-                </div>
-              </li>
-            </ul>
+            <h3>Skills <i class='bx bx-code-alt'></i></h3>
+            {/* Frontend */}
+            <div className="section-title">
+              <h4>Frontend <i class='bx bx-minus-front'></i></h4>
+              <ul>
+                {/* Linguaggi */}
+                <li>
+                  <span><i className='bx bxl-javascript'></i> JavaScript, </span>
+                  <span><i className='bx bxl-html5'></i> HTML5, </span>
+                  <span><i className='bx bxl-css3'></i> CSS3</span>
+                </li>                
+                {/* Frameworks */}
+                <li>
+                  <span><i className='bx bxl-react'></i> React.js, </span>
+                  <span><i className='bx bxl-vuejs'></i> Vue.js, </span>
+                  <span><i className='bx bxl-bootstrap'></i> Bootstrap 4</span>
+                </li>
+              </ul>
+            </div>
+            {/* Backend */}
+            <div className="section-title">
+              <h4>Backend <i class='bx bx-code-curly' ></i></h4>
+              <ul>
+                {/* Linguaggi */}
+                <li>
+                  <span><i className='bx bxl-javascript'></i> JavaScript, </span>
+                  <span><i className='bx bxl-python'></i> Python, </span>
+                  <span><i className='bx bxl-java'></i> Java, </span>
+                  <span> C/C++, </span>
+                  <span>.NET, </span>
+                </li>             
+                {/* Frameworks */}
+                <li>
+                  <span><i className='bx bxl-nodejs'></i> Node.js, </span>
+                  <span><i className='bx bxl-django'></i> Django, </span>
+                  <span><i className='bx bxl-spring-boot'></i> Spring Boot</span>
+                </li>
+              </ul>
+            </div>
+            {/* Networking */}
+            <div className="section-title">
+              <h4>Networking <i className='bx bx-server'></i></h4>
+              <ul>
+                {/* Linguaggi */}
+                <li>
+                  <span> C/C++, </span>
+                  <span> TCP/IP, </span>
+                  <span> HTTP, </span>
+                  <span> WebSockets</span>
+                </li>
+              </ul>
+            </div>
+            {/* Embedded Systems */}
+            <div className="section-title">
+              <h4>Embedded Systems <i class='bx bx-microchip' ></i></h4>
+              <ul>
+                {/* Linguaggi */}
+                <li>
+                  <span>C, </span>
+                  <span>C++, </span>
+                  <span> Assembly X86</span>
+                </li>           
+                {/* Tecnologie */}
+                <li>
+                  <span><i class='bx bx-microchip' ></i>ARM, </span>
+                  <span><i class='bx bx-microchip' ></i> Raspberry Pi</span>
+                </li>
+              </ul>
+            </div>
+            {/* Database */}
+            <div className="section-title">
+              <h4>Database <i className='bx bxs-data'></i></h4>
+              <ul>
+                <li>
+                  <span><i className='bx bx-data'></i> SQL, </span>
+                  <span><i class='bx bxs-data' ></i> MySQL, </span>
+                  <span><i class='bx bxl-postgresql' ></i> PostgreSQL, </span>
+                  <span><i class='bx bxl-mongodb' ></i> MongoDB</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="section">
@@ -96,7 +150,6 @@ function Resume() {
           </div>
         </div>
       </main>
-
 
       {/* Footer */}
       <footer>

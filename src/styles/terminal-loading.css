@@ -12,13 +12,14 @@
     }
     45%,
     55% {
-      width: 6.2em;
-    } /* adjust width based on content */
+      width: 11.5em; /* Aumenta questo valore per più spazio */
+    }
     90%,
     100% {
       width: 0;
     }
-  }
+}
+
   
   .terminal-loader {
     border: 0.1em solid #333;
@@ -26,8 +27,8 @@
     color: #0f0;
     font-family: "Courier New", Courier, monospace;
     font-size: 1em;
-    padding: 1.5em 1em;
-    width: 12em;
+    padding: 3.5em 1em;
+    width: 20em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: relative;
