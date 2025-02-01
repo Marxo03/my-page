@@ -3,31 +3,31 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(150deg, #0f3138, #334347);
-  padding: 3vh 0; /* Usa unità relative per il padding */
-  width: 100%; /* La larghezza si adatta al contenitore */
-  position: fixed; /* Fissa la nav in cima alla pagina */
+  padding: 3vh 0;
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 2vmin; /* Dimensione font relativa alla viewport */
+  font-size: 2vmin;
 }
 
 nav .logo {
   color: white;
-  font-size: 4vmin; /* Dimensione logo dinamica */
+  font-size: 4vmin;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 2vw; /* Usa unità relative per il margine */
+  margin-left: 2vw;
   display: flex;
   align-items: center;
 }
 
 nav .logo img {
   height: auto;
-  width: 25vmin; /* Usa una larghezza dinamica in base alla viewport */
-  max-width: 100%; /* Impedisce che l'immagine ecceda la larghezza del contenitore */
-  max-height: 8vh; /* Limita l'altezza dell'immagine */
+  width: 25vh;
+  max-width: 100%;
+  max-height: 8vh;
   border-radius: 100px;
 }
 
@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 2vw; /* Margine dinamico tra i link */
+  margin: 0 2vw;
 }
 
 nav a {
@@ -49,7 +49,7 @@ nav a {
   text-decoration: none;
   padding: 1vmin 2vw;
   border-radius: 100px;
-  font-size: 3vmin; /* Font-size flessibile per i link */
+  font-size: 3vmin;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -60,43 +60,68 @@ nav a.active {
   font-weight: bold;
 }
 
+/* Aggiungi questa parte al tuo CSS per nascondere l'icona sui dispositivi più grandi */
+.menu-icon {
+  display: none; /* Nasconde l'icona su schermi più grandi */
+}
+
 /* Media query per schermi più piccoli */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Disporre gli elementi verticalmente su schermi piccoli */
-    padding: 5vh 3vw; /* Aumenta il padding verticale su schermi piccoli */
+    flex-direction: column;
+    padding: 5vh 3vw;
   }
 
   nav .logo {
     margin-top: 2vh;
-    margin-bottom: 2vh; /* Spazio tra il logo e i link */
+    margin-bottom: 2vh;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Assicura che la lista occupi tutta la larghezza disponibile */
+    width: 100%;
+    display: none; /* Nascondi i link per default */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  nav ul.show {
+    display: flex;
+    opacity: 1;
   }
 
   nav ul li {
-    margin: 1vh 0; /* Aumenta la distanza tra i link */
+    margin: 1vh 0;
   }
 
   nav a {
-    font-size: 4vmin; /* Aumenta la dimensione del testo per schermi piccoli */
+    font-size: 4vmin;
+  }
+
+  /* Mostra l'icona del menu sui dispositivi piccoli */
+  .menu-icon {
+    display: block; /* Rende visibile l'icona */
+    font-size: 4vmin;
+    cursor: pointer;
+    color: white;
+  }
+
+  .menu-icon.open {
+    color: #14db88; /* Colore quando il menu è aperto */
   }
 }
 
 @media (max-width: 480px) {
   nav {
-    padding: 6vh 3vw; /* Ulteriore aumento del padding su schermi molto piccoli */
+    padding: 6vh 3vw;
   }
 
   nav .logo {
-    font-size: 5vmin; /* Aumenta la dimensione del logo per schermi piccoli */
+    font-size: 5vmin;
   }
 
   nav a {
-    font-size: 5vmin; /* Aumenta la dimensione del testo per schermi più piccoli */
+    font-size: 5vmin;
   }
 }
