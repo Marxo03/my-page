@@ -45,7 +45,7 @@ function App() {
         <Navbar />
         
         {/* Contenitore per le rotte */}
-        <div className="Routes-container" style={{ marginTop: `${navbarHeight}px` }}>
+        <div className="Routes-container" style={{ marginTop: `${navbarHeight + 50}px` }}>
           <Routes>
             <Route path="/my-page/" element={<Home />} />
             <Route path="/my-page/about" element={<About />} />
