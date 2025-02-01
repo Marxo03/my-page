@@ -56,7 +56,7 @@ function Resume() {
               <p>Developed an innovative web app for managing animal and veterinary patient health using React, CSS3, Node.js, and REST APIs.</p>
             </div>
           </div>
-          
+
           <div className="section">
             <h3>Skills <i class='bx bx-code-alt'></i></h3>
             {/* Frontend */}
@@ -166,7 +166,7 @@ function Resume() {
               <a href="https://github.com/Marxo03"><i class='bx bxl-github'></i></a>
               <a href="https://discord.com/users/j4ck_owl03"><i class='bx bxl-discord-alt'></i></a>
               <a href="https://twitter.com/myprofile"><i class='bx bxl-twitter' ></i></a>
-              <a href="https://instagram.com/myprofile"><i class='bx bxl-instagram' ></i></a>
+              <a href="https://instagram.com/_.red_owl._"><i class='bx bxl-instagram' ></i></a>
               <a href="mailto:jack.owl03m@gmail.com"><i class='bx bxl-gmail' ></i></a>
             </div>
           </div>
@@ -197,14 +197,31 @@ function Resume() {
             </ul>
             <ul className="box">
               <li className="link_name">My Projects</li>
-              <li><a href="#arduino">Arduino Projects</a></li>
+              <li>
+                <NavLink to="/my-page/projects#arduino" activeClassName="active">
+                  Arduino Projects
+                </NavLink>
+              </li>
               <li><a href="https://technomances.github.io/">Health4Paws</a></li>
-              <li><a href="#ecopath">EcoPath</a></li>
-              <li><a href="#another">Other Projects</a></li>
+              <li><NavLink to="/my-page/projects#ecopath" activeClassName="active">
+                  EcoPath
+                </NavLink>
+              </li>
+              <li><NavLink to="/my-page/projects#another" activeClassName="active">
+                  Other Projects
+                </NavLink>
+              </li>
             </ul>
             <ul className="box">
-              <li className="link_name">Contact</li>
-              <li><a href="mailto:jack.owl03m@gmail.com">jack.owl03m@gmail.com</a></li>
+              <li className="link_name">Contact Me</li>
+              <li>
+                <NavLink to="/my-page/contacts" activeClassName="active">
+                  Contacts
+                </NavLink>
+              </li>
+              <li>
+                <a href="mailto:jack.owl03m@gmail.com">jack.owl03m@gmail.com</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -219,6 +236,7 @@ function Resume() {
           </div>
         </div>
       </footer>
+      
     </div>
   );
 }

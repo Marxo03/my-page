@@ -69,7 +69,6 @@ nav a.active {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    padding: 5vh 3vw;
   }
 
   nav .logo {
@@ -114,7 +113,6 @@ nav a.active {
 
 @media (max-width: 480px) {
   nav {
-    padding: 6vh 3vw;
   }
 
   nav .logo {
