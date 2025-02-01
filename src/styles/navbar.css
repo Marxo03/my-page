@@ -71,10 +71,8 @@ nav a.active {
     flex-direction: column;
   }
 
-  nav .logo {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
+ /* nav .logo {
+  }*/
 
   nav ul {
     flex-direction: column;
@@ -112,9 +110,10 @@ nav a.active {
 }
 
 @media (max-width: 480px) {
-  nav {
+  /* nav {
   }
-
+  nav .logo {
+  }*/
   nav .logo {
     font-size: 5vmin;
   }
