@@ -100,7 +100,7 @@ nav a.active {
   /* Mostra l'icona del menu sui dispositivi piccoli */
   .menu-icon {
     display: block; /* Rende visibile l'icona */
-    font-size: 4vmin;
+    font-size: 5vmin; /* Modifica qui la dimensione */
     cursor: pointer;
     color: white;
   }
@@ -120,5 +120,10 @@ nav a.active {
 
   nav a {
     font-size: 5vmin;
+  }
+
+  /* Puoi anche modificare qui la dimensione per schermi molto piccoli */
+  .menu-icon {
+    font-size: 9vmin; /* Modifica la dimensione per schermi molto piccoli */
   }
 }
