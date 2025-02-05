@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/my-page/static/css/main.3e5bc642.css",
-    "main.js": "/my-page/static/js/main.92bd2314.js",
+    "main.css": "/my-page/static/css/main.54fe3090.css",
+    "main.js": "/my-page/static/js/main.67be5112.js",
     "static/js/488.900721d4.chunk.js": "/my-page/static/js/488.900721d4.chunk.js",
-    "static/media/dog.png": "/my-page/static/media/dog.16b61d74cf29ca6cb9c4.png",
-    "static/media/ponyo.png": "/my-page/static/media/ponyo.51d4d206d6b20b3a0008.png",
+    "static/media/Health4Paws.png": "/my-page/static/media/Health4Paws.c0b36490fdb57b51146e.png",
+    "static/media/pac-man.jpg": "/my-page/static/media/pac-man.30c0550613fa08310959.jpg",
+    "static/media/ecopath.png": "/my-page/static/media/ecopath.11d90de01857b82d8034.png",
     "static/media/my-logo_transparent.png": "/my-page/static/media/my-logo_transparent.16ebb97bbf0de20eaa84.png",
     "static/media/profile.jpg": "/my-page/static/media/profile.c907fb93e4b1186c22cf.jpg",
     "index.html": "/my-page/index.html",
-    "main.3e5bc642.css.map": "/my-page/static/css/main.3e5bc642.css.map",
-    "main.92bd2314.js.map": "/my-page/static/js/main.92bd2314.js.map",
+    "main.54fe3090.css.map": "/my-page/static/css/main.54fe3090.css.map",
+    "main.67be5112.js.map": "/my-page/static/js/main.67be5112.js.map",
     "488.900721d4.chunk.js.map": "/my-page/static/js/488.900721d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e5bc642.css",
-    "static/js/main.92bd2314.js"
+    "static/css/main.54fe3090.css",
+    "static/js/main.67be5112.js"
   ]
 }
