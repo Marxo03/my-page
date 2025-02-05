@@ -13,17 +13,57 @@
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5vh 0;
-
+    padding: 7vh 0 4vh;
   }
 
   #home-header {
-    padding: 5vh 0 0;
+    padding: 7vh 0 0;
     display: flex;
     flex-direction: column;
   }
 
-  .header .dog-image {
+  .header .header-title {
+    padding-bottom: 5vh;
+  }
+
+  .header .image-header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    overflow: hidden; /* Evita che l'immagine sfocata fuoriesca dal contenitore */
+}
+
+.header .image-header-container::before {
+    content: ''; /* Crea un pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/pac-man.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px); /* Imposta il livello di sfocatura desiderato */
+    z-index: 0; /* Imposta il filtro dietro al testo, ma sopra il contenitore */
+}
+
+
+.header .text-content {
+  position: relative; /* Mantiene il testo sopra l'overlay */
+  z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+  color: white; /* Imposta il colore del testo a piacere */
+  padding: 10vh;
+  background: #0c0b0bb2;
+  text-shadow: 
+      2px 2px 5px rgba(0, 0, 0, 0.836), /* Ombra principale */
+      -2px -2px 5px rgba(24, 71, 172, 0.986); /* Ombra di rilievo per un effetto di profondità */
+}
+
+
+
+  .header .image-header-container .dog-image {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -135,46 +175,70 @@
   }
   .top .media-icons a:nth-child(1){
     background: #161f30;
-  }
-  .top .media-icons a:nth-child(1):hover{
+    transition: transform 0.2s ease-in-out; /* Aggiungi una transizione morbida */
+}
+
+.top .media-icons a:nth-child(1):hover{
     color: #000;
     background: #ffffff;
-  }
-  .top .media-icons a:nth-child(2){
-    background: #5b79db;
-  }
-  .top .media-icons a:nth-child(2):hover{
-    color: #1d1b1b;
-    background: #0032d4;
-  }
-  .top .media-icons a:nth-child(3){
+    transform: scale(1.1); /* Ingrandisce l'elemento al 110% */
+}
+
+.top .media-icons a:nth-child(2){
+    background: #446ef7;
+    transition: transform 0.2s ease-in-out; /* Aggiungi una transizione morbida */
+}
+
+.top .media-icons a:nth-child(2):hover{
+    color: #5376eb;
+    background: #ffffff;
+    transform: scale(1.1); /* Ingrandisce l'elemento al 110% */
+}
+
+.top .media-icons a:nth-child(3){
     background: #1DA1F2;
-  }
-  .top .media-icons a:nth-child(3):hover{
+    transition: transform 0.2s ease-in-out; /* Aggiungi una transizione morbida */
+}
+
+.top .media-icons a:nth-child(3):hover{
     color: #1DA1F2;
     background: #fff;
-  }
-  .top .media-icons a:nth-child(4){
+    transform: scale(1.1); /* Ingrandisce l'elemento al 110% */
+}
+
+.top .media-icons a:nth-child(4){
     background: #E1306C;
-  }
-  .top .media-icons a:nth-child(4):hover{
+    transition: transform 0.2s ease-in-out; /* Aggiungi una transizione morbida */
+}
+
+.top .media-icons a:nth-child(4):hover{
     color: #E1306C;
     background: #fff;
-  }
-  .top .media-icons a:nth-child(5){
+    transform: scale(1.1); /* Ingrandisce l'elemento al 110% */
+}
+
+.top .media-icons a:nth-child(5){
     background: #ec270d;
-  }
-  .top .media-icons a:nth-child(5):hover{
+    transition: transform 0.2s ease-in-out; /* Aggiungi una transizione morbida */
+}
+
+.top .media-icons a:nth-child(5):hover{
     color: #ec270d;
     background: #fff;
-  }
-  .top .media-icons a:nth-child(6){
+    transform: scale(1.1); /* Ingrandisce l'elemento al 110% */
+}
+
+.top .media-icons a:nth-child(6){
     background: #FF0000;
-  }
-  .top .media-icons a:nth-child(6):hover{
+    transition: transform 0.2s ease-in-out; /* Aggiungi una transizione morbida */
+}
+
+.top .media-icons a:nth-child(6):hover{
     color: #FF0000;
     background: #fff;
-  }
+    transform: scale(1.1); /* Ingrandisce l'elemento al 110% */
+}
+
   footer .content .link-boxes{
     width: 100%;
     display: flex;
@@ -331,4 +395,82 @@
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
+  /*main Style*/
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem;
+  }
+  
+  .main .main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .main .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+  
+
+  .main #first-section  { 
+    flex: 1 1 calc(100% - 2rem);
+  }
+
+
+  .main .section {
+    flex: 1 1 calc(30% - 2rem);
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main .section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .main .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e2935;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .main .section p {
+    font-size: 1rem;
+    color: #505657;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .main .section {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main .section {
+      flex: 1 1 100%;
+    }
+  }
   

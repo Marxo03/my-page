@@ -1,4 +1,18 @@
 /*src//styles/App.css*/
+
+
+
+/*GLOBAL*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/*LOCAL*/
+
+
 .App {
   width: 100%;  /* Usa il 100% della larghezza disponibile */
   height: 100vh; /* Imposta l'altezza al 100% della viewport */

@@ -4,6 +4,7 @@ import '../styles/cards.css';
 import { Helmet } from 'react-helmet';
 import logo from '../assets/my-logo_transparent.png'; 
 import { NavLink } from 'react-router-dom';
+import ProfileCard from '../compontents/ProfileCard';
 
 function About() {
   return (
@@ -19,7 +20,10 @@ function About() {
 
       {/* Body */}
       <main className="body">
-      <div class="container">
+        <ProfileCard></ProfileCard>
+      
+      
+      {/*<div class="container">
         <div data-text="Github"  class="glass">
           <svg viewBox="0 0 496 512" height="1em" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -43,7 +47,9 @@ function About() {
         </div>
 
       </div>
+      */}
         <p>This is the about page content. Learn more about me and what i do! <i class='bx bxs-invader'></i></p>
+      
       </main>
 
       {/* Footer */}

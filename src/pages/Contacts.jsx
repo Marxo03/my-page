@@ -4,11 +4,12 @@ import '../styles/terminal-loading.css';
 import { Helmet } from 'react-helmet';
 import logo from '../assets/my-logo_transparent.png'; 
 import { NavLink } from 'react-router-dom';
+import ContactForm from '../compontents/ContactForm'
 
 function Projects() {
   return (
     <div className="home-container">
-      <Helmet>
+        <Helmet>
           <title>Contacts</title>
         </Helmet>
       {/* Header */}
@@ -18,7 +19,7 @@ function Projects() {
 
       {/* Body */}
       <main className="body">
-      
+        <ContactForm/>
         <p>This is the contacts page content.</p>
       </main>
 

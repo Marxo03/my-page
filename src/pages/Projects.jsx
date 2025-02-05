@@ -3,12 +3,16 @@ import '../styles/home.css';
 import '../styles/terminal-loading.css'; 
 import { Helmet } from 'react-helmet';
 import logo from '../assets/my-logo_transparent.png'; 
+import Health4Paws from '../assets/Health4Paws.png';
+import EcoPath from '../assets/ecopath.png';
 import { NavLink } from 'react-router-dom';
+import ProjectCard from '../compontents/ProjectsCard';
+import '../styles/projects-cards.css';
 
 function Projects() {
   return (
     <div className="home-container">
-      <Helmet>
+        <Helmet>
           <title>Projects</title>
         </Helmet>
       {/* Header */}
@@ -18,7 +22,36 @@ function Projects() {
 
       {/* Body */}
       <main className="body">
-        <div class="terminal-loader">
+        <h2>My Projects:</h2>
+        <p>This is the projects page content. Enjoy exploring!</p>
+      
+      <div className="projects-container">
+      <ProjectCard 
+        title="Arduino Projects"
+        description="Embedded projects and IoT solutions."
+        demoLink="https://example.com/demo"
+        sourceLink="https://github.com/Marxo03/Arduino_projects"
+        imageUrl="https://raw.githubusercontent.com/Marxo03/Arduino_projects/refs/heads/main/Projects/Arduino_Alarm_Clock/clock_circuit.jpg"
+      />
+
+      <ProjectCard 
+        title="Health4Paws Project"
+        description="Project focused on dog health."
+        demoLink=""
+        sourceLink="https://technomances.github.io/"
+        imageUrl={Health4Paws}
+      />
+      <ProjectCard 
+        title="Ecopath Project"
+        description="Eco-sustainable solution for urban transportation."
+        demoLink=""
+        sourceLink=""
+        imageUrl={EcoPath}
+      />
+
+
+      </div>
+        {/*<div class="terminal-loader">
           <div class="terminal-header">
             <div class="terminal-title">Status</div>
             <div class="terminal-controls">
@@ -27,10 +60,9 @@ function Projects() {
               <div class="control maximize"></div>
             </div>
           </div>
+          
           <div class="text">Work In progress...</div>
-        </div>
-
-        <p>This is the projects page content. Enjoy exploring!</p>
+        </div>*/}
       </main>
 
       {/* Footer */}
